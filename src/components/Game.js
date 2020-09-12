@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import Board from './Board/Board';
-import ParticlesBg from 'particles-bg'
+import ParticlesBg from 'particles-bg';
 
 class Game extends React.Component {
     render() {
