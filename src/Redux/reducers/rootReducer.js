@@ -1,6 +1,6 @@
 
 import { combineReducers } from 'redux';
-import isWinner from './';
+import isWinner from './isWinnerReducer';
 
 const rootReducer = combineReducers({
     isWinner,
