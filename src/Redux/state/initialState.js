@@ -1,5 +1,5 @@
 const initialState = {
-    isWinner: '',
+    isWinner: false,
 };
 
 export default initialState;
