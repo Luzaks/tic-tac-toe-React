@@ -1,1 +1,2 @@
 export const CHANGE_WINNER = 'CHANGE_WINNER';
+export const CHANGE_SQUARES = 'CHANGE_SQUARES';

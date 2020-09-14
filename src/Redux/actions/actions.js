@@ -1,4 +1,7 @@
-import { CHANGE_WINNER } from './actionTypes';
+import {
+  CHANGE_WINNER,
+  CHANGE_SQUARES,
+} from './actionTypes';
 
 
 function winnerCreator(isWinner) {
@@ -8,6 +11,14 @@ function winnerCreator(isWinner) {
     };
 };
 
+function squaresCreator(isWinner) {
+    return {
+        type: CHANGE_SQUARES,
+        payload: isWinner,
+    };
+};
+
 export {
-    winnerCreator
+  winnerCreator,
+  squaresCreator,
 };
