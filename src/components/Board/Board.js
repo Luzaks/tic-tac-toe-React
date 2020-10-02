@@ -1,6 +1,6 @@
-import React from "react";
-import Square from "./Square";
-import calculateWinner from "../../winning/winning";
+import React  from 'react';
+import Square from './Square';
+import calculateWinner from '../../winning/winning';
 
 class Board extends React.Component {
 
@@ -29,7 +29,13 @@ class Board extends React.Component {
         />);}
 
     render() {
-        const winner = calculateWinner(this.state.squares);    let status;    if (winner) {      status = 'Winner: ' + winner;    } else {      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');    }
+        const winner = calculateWinner(this.state.squares);
+        let status;
+        if (winner) {
+            status = 'Winner: ' + winner;
+        } else {
+            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        }
 
         return (
             <div className="game-board-container">
